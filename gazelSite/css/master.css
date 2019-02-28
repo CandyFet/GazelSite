@@ -5,6 +5,7 @@ html, body {
 
 body {
   background-image: url(../pics/background32.jpg);
+  margin-top: 0px;
 }
 
 .menu {
@@ -122,11 +123,6 @@ body {
 }
 
 
-
-body {
-  margin-top: 0px;
-}
-
 .rent {
   font-family: 'Roboto', sans-serif;
   font-size: 2vw;
@@ -235,10 +231,9 @@ border-right: 50px solid transparent;
 .house_2 {
 height: 95px;
 width: 100px;
-margin: 35px 20px 0 200px;
+margin: 16px 20px 0 200px;
 background: #3277e5;
 position: fixed;
-bottom: 0;
 opacity: 0;
 animation: go-left-right1 13s infinite linear;
 animation-delay: 3s;
@@ -259,10 +254,9 @@ border-right: 50px solid transparent;
 .house_3 {
 height: 95px;
 width: 100px;
-margin: 35px 20px 0 400px;
+margin: 16px 20px 0 400px;
 background: #3277e5;
 position: fixed;
-bottom: 0;
 opacity: 0;
 animation: go-left-right1 13s infinite linear;
 animation-delay: 6s;
@@ -282,10 +276,9 @@ border-right: 50px solid transparent;
 .house_4 {
 height: 95px;
 width: 100px;
-margin: 35px 20px 0 400px;
+margin: 16px 20px 0 400px;
 background: #3277e5;
 position: fixed;
-bottom: 0;
 opacity: 0;
 animation: go-left-right1 13s infinite linear;
 animation-delay: 9s;
@@ -322,7 +315,7 @@ border-right: 50px solid transparent;
 
 .info_flex > div {
   width: 20vw;
-  height: 10vw;
+  height: 16vw;
   text-align: center;
 }
 .burger_menu {
@@ -387,6 +380,18 @@ border-right: 50px solid transparent;
     width: 100%;
     justify-content: center;
   }
+
+  .road {
+    display: none;
+  }
+
+  .info_flex > div {
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
   /* Лучше изучить JS и Jquery для нормально работы адаптивного меню */
 /*
   .navbar {
@@ -417,7 +422,7 @@ border-right: 50px solid transparent;
   height: 3vw;
   background-color: red;
   text-align: center;
-  border-radius:
+  border-radius: 10px;
 }
 
 .razdelenie_1 > a {
@@ -479,4 +484,12 @@ border-right: 50px solid transparent;
 
 .box{
   align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+
+.road {
+  height: 60px;
+  background-color: grey;
+  width: 100%;
 }
