@@ -1,11 +1,6 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
 body {
   background-image: url(../pics/background32.jpg);
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .menu {
@@ -110,7 +105,6 @@ body {
   display: flex;
   position: absolute;
   width: 100%;
-  position: absolute;
   z-index: -1;
   justify-content: center;
 }
@@ -178,10 +172,10 @@ body {
 }
 
 .footer {
-  position: fixed;
   background-image: url(../pics/background32.jpg);
   width: 100%;
   margin-top: 0;
+  position: relative;
 }
 
 .bottom {
@@ -194,14 +188,11 @@ body {
 }
 
 @keyframes go-left-right1 {
-
-  100% { opacity: 1; }
-
-  from {
+  0% {
     opacity: 1;
-    right: 0px;
+    right: 0;
   }
-  to {
+  100% {
     opacity: 1;
     right: calc(100% - 50px);
   }
@@ -209,90 +200,90 @@ body {
 
 
 .house_1 {
-height: 95px;
-width: 100px;
-margin: 16px 20px 0 0;
-background: #3277e5;
-position: fixed;
-animation: go-left-right1 13s infinite linear;
+    height: 95px;
+    width: 100px;
+    margin: 16px 20px 0 0;
+    background: #3277e5;
+    position: absolute;
+    animation: go-left-right1 13s infinite linear;
 }
 .house_1:before {
-content: "";
-height: 0;
-width: 0;
-position: absolute;
-left: 0;
-top: -35px;
-border-bottom: 35px solid #3277e5;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    border-bottom: 35px solid #3277e5;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
 
 .house_2 {
-height: 95px;
-width: 100px;
-margin: 16px 20px 0 200px;
-background: #3277e5;
-position: fixed;
-opacity: 0;
-animation: go-left-right1 13s infinite linear;
-animation-delay: 3s;
+    height: 95px;
+    width: 100px;
+    margin: 16px 20px 0 200px;
+    background: #3277e5;
+    position: absolute;
+    opacity: 0;
+    animation: go-left-right1 13s infinite linear;
+    animation-delay: 3s;
 
 }
 .house_2:before {
-content: "";
-height: 0;
-width: 0;
-position: absolute;
-left: 0;
-top: -35px;
-border-bottom: 35px solid #3277e5;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    border-bottom: 35px solid #3277e5;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
 
 .house_3 {
-height: 95px;
-width: 100px;
-margin: 16px 20px 0 400px;
-background: #3277e5;
-position: fixed;
-opacity: 0;
-animation: go-left-right1 13s infinite linear;
-animation-delay: 6s;
+    height: 95px;
+    width: 100px;
+    margin: 16px 20px 0 400px;
+    background: #3277e5;
+    position: absolute;
+    opacity: 0;
+    animation: go-left-right1 13s infinite linear;
+    animation-delay: 6s;
 }
 .house_3:before {
-content: "";
-height: 0;
-width: 0;
-position: absolute;
-left: 0;
-top: -35px;
-border-bottom: 35px solid #3277e5;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    border-bottom: 35px solid #3277e5;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
 
 .house_4 {
-height: 95px;
-width: 100px;
-margin: 16px 20px 0 400px;
-background: #3277e5;
-position: fixed;
-opacity: 0;
-animation: go-left-right1 13s infinite linear;
-animation-delay: 9s;
+    height: 95px;
+    width: 100px;
+    margin: 16px 20px 0 400px;
+    background: #3277e5;
+    position: absolute;
+    opacity: 0;
+    animation: go-left-right1 13s infinite linear;
+    animation-delay: 9s;
 }
 .house_4:before {
-content: "";
-height: 0;
-width: 0;
-position: absolute;
-left: 0;
-top: -35px;
-border-bottom: 35px solid #3277e5;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: -35px;
+    border-bottom: 35px solid #3277e5;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
 }
 
 .content {
@@ -342,7 +333,7 @@ border-right: 50px solid transparent;
 }
 
 .burger_menu span:nth-child(1) {
-    top: 0px;
+    top: 0;
 }
 
 .burger_menu span:nth-child(2), .menu__icon span:nth-child(3) {
@@ -371,6 +362,7 @@ border-right: 50px solid transparent;
   }
 
   .info_flex {
+    /*justify-content повторяются*/
     display: flex;
     justify-content: space-around;
     flex-direction: column;
