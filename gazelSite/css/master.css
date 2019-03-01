@@ -379,6 +379,7 @@ border-right: 50px solid transparent;
     align-items: stretch;
     width: 100%;
     justify-content: center;
+    height: 30vw;
   }
 
   .road {
@@ -392,6 +393,70 @@ border-right: 50px solid transparent;
     align-items: center;
     justify-content: center;
   }
+
+  .rent {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: white;
+    text-shadow:
+      -0   -1px 1px #000000,
+  		 0   -1px 1px #000000,
+  		-0    1px 1px #000000,
+  		 0    1px 1px #000000,
+  		-1px -0   1px #000000,
+  		 1px -0   1px #000000,
+  		-1px  0   1px #000000,
+  		 1px  0   1px #000000,
+  		-1px -1px 1px #000000,
+  		 1px -1px 1px #000000,
+  		-1px  1px 1px #000000,
+  		 1px  1px 1px #000000,
+  		-1px -1px 1px #000000,
+  		 1px -1px 1px #000000,
+  		-1px  1px 1px #000000,
+  		 1px  1px 1px #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+  }
+
+  .rent_content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8px;
+    color: white;
+    text-shadow:
+      -0   -1px 1px #000000,
+  		 0   -1px 1px #000000,
+  		-0    1px 1px #000000,
+  		 0    1px 1px #000000,
+  		-1px -0   1px #000000,
+  		 1px -0   1px #000000,
+  		-1px  0   1px #000000,
+  		 1px  0   1px #000000,
+  		-1px -1px 1px #000000,
+  		 1px -1px 1px #000000,
+  		-1px  1px 1px #000000,
+  		 1px  1px 1px #000000,
+  		-1px -1px 1px #000000,
+  		 1px -1px 1px #000000,
+  		-1px  1px 1px #000000,
+  		 1px  1px 1px #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .razdelenie_1 {
+    height: 6vw;
+  }
+
+  .contacts {
+    width: 16vw;
+    font-size: 2vw;
+  }
+
   /* Лучше изучить JS и Jquery для нормально работы адаптивного меню */
 /*
   .navbar {
